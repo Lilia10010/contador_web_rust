@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@source "../src/**/*.rs";
+@source "../index.html";
+
+/* Scrollbar geral */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Fundo da barra */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+/* Parte que desliza */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #22d3ee, #a855f7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #67e8f9, #c084fc);
+}
